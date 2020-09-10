@@ -2,6 +2,7 @@ import React from "react";
 import Form from './Form';
 import App from './App';
 import Upload from './Galereya';
+import Footer from './footer';
 import  './Button.scss';
 import {
   BrowserRouter as Router,
@@ -12,6 +13,7 @@ import {
 export  function Rout() {
   return (
     <Router>
+      <body>
       <div>
         <nav>
           <ul>
@@ -40,9 +42,9 @@ export  function Rout() {
           </Route>
         </Switch>
       </div>
+      <div><Footer/></div>
+      </body>
     </Router>
   );
 }
-
-
 export default Rout;
