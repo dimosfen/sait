@@ -1,6 +1,7 @@
 import React from "react";
 import Form from './Form';
 import App from './App';
+import  './Button.scss';
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,14 +14,14 @@ export  function Rout() {
       <div>
         <nav>
           <ul>
-            <li>
-              <Link to="/">Home</Link>
+            <li > 
+            <Link to="/"><button class="spin thick " >Home</button></Link>
             </li>
-            <li>
-              <Link to="/Form">Form</Link>
+            <li >
+            <Link to="/Form"><button class="spin thick " >Form</button></Link>
             </li>
-            <li>
-              <Link to="/users">Users</Link>
+            <li >
+            <Link to="/Users"><button class="spin thick " >Users</button></Link>
             </li>
           </ul>
         </nav>
