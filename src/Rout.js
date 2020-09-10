@@ -1,6 +1,7 @@
 import React from "react";
 import Form from './Form';
 import App from './App';
+import Upload from './Galereya';
 import  './Button.scss';
 import {
   BrowserRouter as Router,
@@ -21,7 +22,7 @@ export  function Rout() {
             <Link to="/Form"><button class="spin thick " >Form</button></Link>
             </li>
             <li >
-            <Link to="/Users"><button class="spin thick " >Users</button></Link>
+            <Link to="/Gale"><button class="spin thick " >Gale</button></Link>
             </li>
           </ul>
         </nav>
@@ -31,8 +32,8 @@ export  function Rout() {
           <Route path="/Form">
             <Form />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/Gale">
+            <Upload />
           </Route>
           <Route path="/">
               <App />
@@ -42,8 +43,6 @@ export  function Rout() {
     </Router>
   );
 }
-function Users() {
-  return <h2>Users</h2>;
-}
+
 
 export default Rout;
